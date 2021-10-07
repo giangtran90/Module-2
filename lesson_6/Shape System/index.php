@@ -17,7 +17,7 @@ $circle = new Circle('Circle_1', 3);
 echo $circle->show();
 echo "<br/><b>Circle Area: </b>" . $circle->calculateArea();
 echo "<br/><b>Circle Perimeter: </b>" . $circle->calculatePerimeter();
-echo "<br/>" . $circle->resize(50);
+echo "<br/>" . $circle->resize(100);
 
 echo "<hr/>";
 $cylinder = new Cylinder('Cylinder_1', 3, 5);

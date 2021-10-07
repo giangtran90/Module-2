@@ -1,11 +1,24 @@
 <?php
-$student = array(
-    '08T1016' => "Phan Văn Cương",
-    '08T1013' => "Nguyễn Văn Hoàng",
-    '08T1015' => "Bùi Việt Đức",
-);
-// Xóa Bùi Việt Đức ra khỏi mảng $student
-unset($student['08T1015']);
-print_r($student);
-?>
+namespace Cons;
+
+include_once (dirname (__FILE__) . '/test1.php');
+include_once (dirname (__FILE__) . '/test2.php');
+
+use Ong_nois\Ong_noi;
+use Chas\Cha;
+
+class Con extends Cha implements Ong_noi
+{
+    public function In_Ra()
+    {
+        echo "123456";
+    } 
+
+    function Tai_san()
+    {
+        echo "<br/>". "phát triển tài sản";
+    }
+}
+
+
 ?>
